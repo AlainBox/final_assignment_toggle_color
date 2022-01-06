@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/263c7d626f.js" crossorigin="anonymous"></script>
+            <title>Color Toggle</title>
+    </head>
+
+    <body id="bodyID">
+        <nav class="navigation-main">
+            <div class="toggle-button-navigation">
+                <button id="hamburger-menu"><i class="fas fa-bars"></i></button>
+            </div>
+
+            <div class="ul-main-nav">
+                <ul>
+                    <li><a href="#" class="navigation-main-link">Home</a></li>
+                    <li><a href="#" class="navigation-main-link">About</a></li>
+                    <li><a href="#" class="navigation-main-link">Gallery</a></li>
+                    <li><a href="#" class="navigation-main-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <aside class="navigation-aside">
+            <ul>
+                <li id="navigation-aside-link1" onclick="showText('blue')">
+                    <input type="radio" id="blue" name="radiobutton">
+                    <a href="#">Blue</a>
+                </li>
+                <li id="navigation-aside-link2" onclick="showText('purple')">
+                    <input type="radio" id="purple" name="radiobutton">
+                    <a href="#">Purple</a>
+                </li>
+                <li id="navigation-aside-link3" onclick="showText('green')">
+                    <input type="radio" id="green" name="radiobutton">
+                    <a href="#">Green</a>
+                </li>
+                <li id="navigation-aside-link4" onclick="showText('red')">
+                    <input type="radio" id="red" name="radiobutton">
+                    <a href="#">Red</a>
+                </li>
+                <li id="navigation-aside-link5" onclick="showText('Color Resetted')">
+                    <input type="radio" id="reset-color" name="radiobutton">
+                    <a href="#">Color Reset</a>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="textonclick">
+            <p id="demo"></p>
+        </div>
+
+    </body>
+
+    <script defer src="script.js"></script>
+
+</html>
