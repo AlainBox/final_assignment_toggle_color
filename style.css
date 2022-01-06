@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(250, 250, 250);
+}
+
+input{
+    margin: 0 50px;
+    text-align: center;
+    color: black;
+}
+
+.navigation-main{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    z-index: 1000;
+}
+
+.navigation-main ul{
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    padding: 10px;
+}
+
+#hamburger-menu{
+    background-color: red;
+    color: #fff;
+    width: 60px;
+    border: none;
+    border-radius: 0;
+    height: 100%;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+#hamburger-menu:hover{
+    opacity: .5;
+}
+
+.navigation-main li{
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.navigation-main li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.navigation-main li a:hover{
+    opacity: .6;
+    transition: .3s;
+}
+
+.navigation-aside{
+    width: 60px;
+    height: calc(100vh - 60px);
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation-aside ul{
+
+    font-size: 20px;
+    overflow: hidden;
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-menu:hover,
+.navigation-aside ul li{
+    display: block;
+}
+
+.navigation-aside ul li{
+    list-style: none;
+    line-height: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation-aside ul li:hover{
+    cursor: pointer;
+}
+
+.navigation-aside ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: all .5s ease-in-out;
+}
+
+.title-aside-links{
+    text-decoration: none;
+    font-size: 15px !important;
+}
+
+.title-aside-links:hover{
+    padding-left: 0px !important;
+}
+
+.textonclick{
+    display: flex;
+    justify-content: center;
+    margin-top: -350px;
+    font-size: 50px;
+    color: black;
+    text-transform: uppercase;
+}
